@@ -1,0 +1,9 @@
+def tower(n,s,e,d):
+    if n==1:
+        print("Move",n,"from",s,"to",d)
+        return
+    tower(n-1,e,s,d)
+    print("move",n,"from",s,"to",d)
+    tower(n-1,e,s,d)
+n=int(input())
+tower(n,"source","extra","destiny")
